@@ -5,6 +5,19 @@ Thanks for your interest—contributions are welcome.
 MDFlux is one cross-platform codebase for Windows x64 and Linux x64 (glibc). Read the
 [cross-platform documentation](docs/cross-platform/README.md) for editions, support boundaries,
 release verification, and setup paths before opening a pull request.
+## Quickstart
+Get the dev app running in 3 commands (requires Node.js 20+ and Rust):
+```bash
+git clone https://github.com/ibrahimqureshae/mdflux.git && cd mdflux
+cd app && npm install
+npm run tauri dev
+```
+Run headless verification checks:
+```bash
+cd app && npm run check
+cd src-tauri && cargo check --locked
+```
+
 
 ## Project layout
 
